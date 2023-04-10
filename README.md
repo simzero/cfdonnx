@@ -1,6 +1,6 @@
 # cfdonnx
 
-A Python module for exporting pre-trained CFD models to ONNX, making them interoperable with other ML frameworks and compatible with browsers. 
+A Python module for exporting pre-trained CFD models to ONNX, making them interoperable with other ML frameworks and compatible with browsers.
 
 It currently supports U-Net architecture and PyTorch models, but it will be soon extended to other frameworks and architectures.
 
@@ -38,4 +38,6 @@ python3 -m cfdonnx \
         --output flowAroundObstacles.onnx
 ```
 
-You can use your CFD ONNX models on runtime in Babylon.js as showcased at https://play.simzero.com/#D3SFTH#3.
+You can use your CFD ONNX models on runtime in Babylon.js as showcased at https://play.simzero.com/#D3SFTH#3 for the flowAroundObstacles example.
+
+A generic template for using ONNX is also available at https://play.simzero.com/#WIB297#1.
