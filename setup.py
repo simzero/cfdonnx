@@ -10,6 +10,7 @@ setup(
     long_description=long_description,
     long_description_content_type='text/markdown',
     author='Carlos Pena Monferrer',
+    keywords='cfd ml onnx',
     url='https://github.com/simzero/cfdonnx',
     packages=['cfdonnx', 'cfdonnx.models', 'cfdonnx.models.torch'],
     package_dir={'': 'src'},
