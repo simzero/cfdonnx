@@ -98,9 +98,7 @@ def parseOpts(argv):
 
 def main():
     options = parseOpts(sys.argv[1:])
-
     device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-
     file_extension = os.path.splitext(options["checkpoint"])[1]
 
     if file_extension == '.pt':
@@ -123,7 +121,6 @@ def main():
         else:
             print(net_name + " architecture not supported")
             
-
         if not options["kernel_size"]:
             kernel_size = state_dict["kernel_size"]
         else:
@@ -152,6 +149,7 @@ def main():
             batch_norm=False,
             weight_norm=False
         )
+        model.load_state_dict(state_dict, strict=False)
         model.to(device)
 
         torch.onnx.export(
