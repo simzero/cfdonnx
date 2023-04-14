@@ -38,6 +38,6 @@ python3 -m cfdonnx \
         --output flowAroundObstacles.onnx
 ```
 
-You can use your CFD ONNX models on runtime in Babylon.js as showcased at https://play.simzero.com/#D3SFTH#3 for the flowAroundObstacles example.
+You can use your CFD ONNX models on runtime in Babylon.js as showcased at https://play.simzero.com/#D3SFTH#6 for the [flowAroundObstacles](https://github.com/simzero/openfoam-ml-rom/tree/main/OpenFOAM/incompressible/simpleFoam/flowAroundObstacles) example.
 
 A generic template for using ONNX is also available at https://play.simzero.com/#WIB297#1.
