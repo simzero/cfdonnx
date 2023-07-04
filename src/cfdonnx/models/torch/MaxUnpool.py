@@ -1,11 +1,10 @@
 # - Export with max_unpool2D is not supported in ONNX
 # - This code relies on the workaround described at:
-# - https://github.com/community/community/discussions/23495
+# - https://github.com/pytorch/pytorch/issues/25088
 
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from mmcv.cnn.utils.weight_init import xavier_init
 from torch.autograd import Function
 from torch.nn.modules.pooling import _MaxUnpoolNd
 from torch.nn.modules.utils import _pair
